@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import './Style.css'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEyeSlash } from '@fortawesome/free-solid-svg-icons'
+
+import { FaEyeSlash } from 'react-icons/fa';
+
 
 class LandingPage extends Component {
     render() {
@@ -18,8 +23,8 @@ class LandingPage extends Component {
                                     <span className="name-span">Daftar</span>
 
                                     <input type="text" placeholder="Nomor Ponsel ata Email" className="form-inputs" />
-                                    <input type="password" placeholder="Kata Sandi" class="form-inputs form-password" />
-                                    <i className="fa fa-eye" id="togglePassword"></i>
+                                    <input type="password" placeholder="Kata Sandi " class="form-inputs form-password" /><FaEyeSlash className="eyeslash-icon"/>
+                                    
 
                                     <button type="submit" class="submit-button">MASUK</button>
 
@@ -27,9 +32,10 @@ class LandingPage extends Component {
                                 </form>
 
                                 <div className="signup-cover">
-                                    <p className="signup-text">--------------- ata masuk dengan -------------------</p>
-                                    <a href="" className="socials"><i class="fa fa-google"></i> Google</a>
-                                    <a href="" className="socials"><i class="fa fa-facebook"></i> Facebook</a>
+                                    <p className="signup-text">------ ata masuk dengan -----------</p>
+                                    <a href="" className="socials">
+                                        <img className="icon-google" src={require('./images/Google.png')} alt="Google" /> Google</a>
+                                    <a href="" className="socials"><img className="icon-facebook" src={require('./images/facebook.png')} alt="Facebook" /> Facebook</a>
                                 </div>
                             </div>
 
